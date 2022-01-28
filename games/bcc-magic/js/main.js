@@ -79,7 +79,6 @@
   function updateBoard() {
       var _a;
       var grid = gb.getGrid();
-      console.log("inputs", grid, buttons);
       for (var i = 0; i < buttons.length; ++i) {
           if (i >= Math.pow(gb.dimensions, 2)) {
               break;
@@ -87,12 +86,10 @@
           var row = Math.floor(i / 3);
           var col = i % 3;
           var color = (_a = grid === null || grid === void 0 ? void 0 : grid[row]) === null || _a === void 0 ? void 0 : _a[col];
-          console.log("row ".concat(row, " column ").concat(col, " color ").concat(color));
           buttons[i].style.backgroundColor = color;
       }
   }
   document.addEventListener("DOMContentLoaded", function () {
-      console.log("loaded", boardView);
       gb.shuffle();
       updateBoard();
   });
@@ -101,7 +98,6 @@
       var col = i % 3;
       var button = buttons[i];
       button.addEventListener("click", function (event) {
-          console.log("click: ".concat(row, " ").concat(col));
           event.preventDefault();
           gb.tap(row, col);
           updateBoard();
