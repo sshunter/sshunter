@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Magic Squares</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+<body>
+  <h1>Magic Squares</h1>
+
+  <section class="gameboard">
+    <form id="board" class="gameboard__form">
+      <button class="gameboard__button">&nbsp;</button>
+      <button class="gameboard__button">&nbsp;</button>
+      <button class="gameboard__button">&nbsp;</button>
+      <button class="gameboard__button">&nbsp;</button>
+      <button class="gameboard__button">&nbsp;</button>
+      <button class="gameboard__button">&nbsp;</button>
+      <button class="gameboard__button">&nbsp;</button>
+      <button class="gameboard__button">&nbsp;</button>
+      <button class="gameboard__button">&nbsp;</button>
+    </form>
+  </section>
+
+  <section class="rules">
+    <p>It's a pretty simple puzzle. 3x3 grid with 3 colors (will eventually be
+      able to make it more dimensions/colors)</p>
+
+    <p>When a square is clicked on, that square and the squares above, below, to
+    the right, and to the left if the exist are cycled forward one color. The
+    last color wraps back to the first.</p>
+
+    <p>The goal is to make the grid all one color.</p>
+  </section>
+
+  <!-- Scripts -->
+  <script src="js/main.min.js"></script>
+</body>
+</html>
