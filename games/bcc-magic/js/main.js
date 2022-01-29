@@ -1,4 +1,4 @@
-/*! bcc-magic v0.2.0 | (c) 2022 Sam Hunter | All Rights Reserved | https://github.com/sshunter/bcc-magic.git */
+/*! bcc-magic v0.2.1 | (c) 2022 Sam Hunter | All Rights Reserved | https://github.com/sshunter/bcc-magic.git */
 (function () {
   'use strict';
 
@@ -91,10 +91,14 @@
           gb.tap(row, col);
           updateBoard();
           if (gb.isSolved()) {
-              alert("You did a thing!");
-              gb.shuffle();
-              updateBoard();
-              alert("Now do it again!");
+              setTimeout(function () {
+                  alert("You did a thing!");
+                  gb.shuffle();
+                  updateBoard();
+                  setTimeout(function () {
+                      alert("Now do it again!");
+                  });
+              });
           }
           return true;
       });
