@@ -3,43 +3,68 @@
   <!-- bcc-magic | (c) 2022 Sam Hunter | All Rights Reserved -->
   <head>
     <title>Magic Squares</title>
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link
       href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII="
       rel="icon"
       type="image/x-icon"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
-<body>
-  <h1>Magic Squares</h1>
+  <body>
+    <dialog>
+    <form method="dialog">
+        <p class="dialog__content"></p>
+        <input class="dialog__button" type="submit" value="Close" />
+      </form>
+    </dialog>
+    <h1>Magic Squares</h1>
 
-  <section class="gameboard">
-    <form id="board" class="gameboard__form">
-      <button class="gameboard__button">&nbsp;</button>
-      <button class="gameboard__button">&nbsp;</button>
-      <button class="gameboard__button">&nbsp;</button>
-      <button class="gameboard__button">&nbsp;</button>
-      <button class="gameboard__button">&nbsp;</button>
-      <button class="gameboard__button">&nbsp;</button>
-      <button class="gameboard__button">&nbsp;</button>
-      <button class="gameboard__button">&nbsp;</button>
-      <button class="gameboard__button">&nbsp;</button>
-    </form>
-  </section>
+    <button class="toolbar__button" id="toolbar__newgame">
+      <img class="toolbar_icon" src="svg/refresh.svg" /><span
+        class="toolbar_text"
+        >New Game</span
+      >
+    </button>
+    <section class="gameboard">
+      <form id="board" class="gameboard__form">
+        <button class="gameboard__button">&nbsp;</button>
+        <button class="gameboard__button">&nbsp;</button>
+        <button class="gameboard__button">&nbsp;</button>
+        <button class="gameboard__button">&nbsp;</button>
+        <button class="gameboard__button">&nbsp;</button>
+        <button class="gameboard__button">&nbsp;</button>
+        <button class="gameboard__button">&nbsp;</button>
+        <button class="gameboard__button">&nbsp;</button>
+        <button class="gameboard__button">&nbsp;</button>
+      </form>
+    </section>
 
-  <section class="rules">
-    <p>It's a pretty simple puzzle. 3x3 grid with 3 colors (will eventually be
-      able to make it more dimensions/colors)</p>
+    <section class="rules">
+      <p>
+        It's a pretty simple puzzle. 3x3 grid with 3 colors (will eventually be
+        able to make it more dimensions/colors)
+      </p>
 
-    <p>When a square is clicked on, that square and the squares above, below, to
-    the right, and to the left if the exist are cycled forward one color. The
-    last color wraps back to the first.</p>
+      <p>
+        When a square is clicked on, that square and the squares above, below,
+        to the right, and to the left if the exist are cycled forward one color.
+        The last color wraps back to the first.
+      </p>
 
-    <p>The goal is to make the grid all one color.</p>
-  </section>
+      <p>The goal is to make the grid all one color.</p>
+    </section>
 
-  <!-- Scripts -->
-  <script src="js/main.js"></script>
-</body>
+    <section class="about">
+      <p>
+        Icons are from the
+        <a href="https://www.svgrepo.com/collection/remix-line-interface-icons/"
+          >Remix Line Interface Icons</a
+        >
+        collection.
+      </p>
+    </section>
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+  </body>
 </html>
