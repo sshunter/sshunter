@@ -18,25 +18,24 @@
         <input class="dialog__button" type="submit" value="Close" />
       </form>
     </dialog>
-    <h1>Magic Squares</h1>
+    <h1>Magic Squares&nbsp;<span class="version-text">v0.5.0</span></h1>
 
-    <button class="toolbar__button" id="toolbar__newgame">
-      <img class="toolbar_icon" src="svg/refresh.svg" /><span
+    <header>
+      <button class="toolbar__button" id="toolbar__newgame">
+        <img class="toolbar_icon" src="svg/refresh.svg" /><span
         class="toolbar_text"
-        >New Game</span
+      >New Game</span
       >
-    </button>
+      </button>
+      <label for="grid-size" class="toolbar__button">Grid Size:</label>
+      <select class="toolbar__button" name="grid-size" id="toolbar__gridsize">
+        <option value="2">2x2</option>
+        <option value="3" selected>3x3</option>
+        <option value="4">4x4</option>
+      </select>
+    </header>
     <section class="gameboard">
       <form id="board" class="gameboard__form">
-        <button class="gameboard__button">&nbsp;</button>
-        <button class="gameboard__button">&nbsp;</button>
-        <button class="gameboard__button">&nbsp;</button>
-        <button class="gameboard__button">&nbsp;</button>
-        <button class="gameboard__button">&nbsp;</button>
-        <button class="gameboard__button">&nbsp;</button>
-        <button class="gameboard__button">&nbsp;</button>
-        <button class="gameboard__button">&nbsp;</button>
-        <button class="gameboard__button">&nbsp;</button>
       </form>
     </section>
 
